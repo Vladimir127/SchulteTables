@@ -2,4 +2,18 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="font_light">#EEEFF2</color>
+    <color name="schulte_cell_unpressed">#CFAB98</color>
+    <color name="main">#b18971</color>
+    <color name="main_goal_button_background">@color/main</color>
+    <color name="main_goal_button_stroke">#E2B493</color>
+    <color name="action_bar_background">#cfab98</color>
+    <color name="main_goal_button_font">@color/font_light</color>
+    <color name="date_light">@color/font_light</color>
+    <color name="accent">#c78d7f</color>
+    <color name="gradient_fiol1">@color/accent</color>
+    <color name="background">#ffefe0</color>
+    <color name="red">#C23934</color>
+    <color name="date_dark">@color/main</color>
+    <color name="schulte_cell_pressed">#FAD9BB</color>
 </resources>

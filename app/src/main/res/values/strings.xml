@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Schulte Tables</string>
+    <string name="icon">Иконка</string>
+    <string name="get_number_description_call">На указанный номер сейчас поступит звонок. Последние 4 цифры являются кодом.</string>
+    <string name="next">Продолжить</string>
+    <string name="cansel">Отменить</string>
+    <string name="confirm_clear">Вы уверены, что хотите обнулить все рекорды?</string>
+    <string name="yes">Да</string>
+    <string name="schulte_tables">Таблицы Шульте</string>
+    <string name="menu">Меню</string>
+    <string name="repeat1">Повторить</string>
 </resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/blue_black_round"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/ImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/icon"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/TextView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ImageView"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/get_number_description_call"
+        android:textColor="#fff"
+        android:textSize="14sp" />
+    <!-- TODO: Чё??? get_number_description_call -->
+
+    <CheckBox
+        android:id="@+id/DontShowCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextView1"
+        android:layout_centerHorizontal="true"
+        android:buttonTint="@color/accent"
+        android:text="Больше не показывать"
+        android:textColor="#fff"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/YesTextView"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/DontShowCheckBox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/violet_gradient_round"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        android:text="@string/next"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/NoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/YesTextView"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/cansel"
+        android:textColor="#fff" />
+
+</RelativeLayout>

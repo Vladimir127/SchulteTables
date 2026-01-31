@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:id="@+id/heart_image_view1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_heart"
+            android:scaleY="1.2"
+            android:scaleX="1.2"/>
+
+        <ImageView
+            android:id="@+id/heart_image_view2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_heart"
+            android:scaleY="1.2"
+            android:scaleX="1.2" />
+
+        <ImageView
+            android:id="@+id/heart_image_view3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_heart"
+            android:scaleY="1.2"
+            android:scaleX="1.2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_clock"
+            android:layout_marginEnd="10dp"/>
+
+        <TextView
+            android:id="@+id/time_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/accent"
+            android:text="0:00:00"
+            android:textSize="18dp"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+    <com.github.vladimir127.schultetables.utils.SquareGridLayout
+        android:id="@+id/game_field_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:padding="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+<!--
+        <TextView
+            style="@style/SchulteCellStyle"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:tag="0"/>
+
+        <TextView
+            style="@style/SchulteCellStyle"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:tag="1" />
+
+        <TextView
+            style="@style/SchulteCellStyle"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:tag="2" />
+
+        <TextView
+            style="@style/SchulteCellStyle"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:tag="3" />
+
+        <TextView
+            style="@style/SchulteCellStyle"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:tag="4" />
+
+        <TextView
+            style="@style/SchulteCellStyle"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:tag="5" />
+
+        <TextView
+            style="@style/SchulteCellStyle"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:tag="6" />
+
+        <TextView
+            style="@style/SchulteCellStyle"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:tag="7" />
+
+        <TextView
+            style="@style/SchulteCellStyle"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:tag="8" />  -->
+    </com.github.vladimir127.schultetables.utils.SquareGridLayout>
+
+    <TextView
+        android:id="@+id/find_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/main"
+        android:text="Найдите число 1"
+        android:textSize="18dp"
+        android:layout_gravity="center_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/game_field_layout"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

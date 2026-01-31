@@ -6,4 +6,19 @@
     </style>
 
     <style name="Theme.SchulteTables" parent="Base.Theme.SchulteTables" />
+
+    <style name="SchulteCellStyle" parent="Widget.AppCompat.TextView">
+
+        <item name="android:width">0dp</item>
+        <item name="android:height">0dp</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_rowWeight">1</item>
+        <item name="android:text">0</item>
+        <item name="android:textColor">@color/font_light</item>
+        <item name="android:textSize">28dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/schulte_cell_unpressed</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:clickable">true</item>
+    </style>
 </resources>
