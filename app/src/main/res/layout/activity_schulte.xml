@@ -4,9 +4,16 @@
     android:layout_height="match_parent"
     android:background="@color/background">
 
+    <View
+        android:id="@+id/status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:background="@color/action_bar_background"/>
+
     <!-- Верхняя панель -->
     <RelativeLayout
         android:id="@+id/RelTop"
+        android:layout_below="@+id/status_bar"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="@drawable/bottom_blue_round">
